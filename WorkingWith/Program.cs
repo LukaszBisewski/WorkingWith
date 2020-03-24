@@ -1,12 +1,20 @@
 ﻿using System;
+using WorkingWith.Models;
 
-namespace WorkingWith
+namespace WorkingWith.Models
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Race race = new Race();
+            race.Begin();
+
+            Shop shop = new Shop();
+            shop.CompleteOrder();
+            shop.CompletFakeOrder();
+            Console.ReadLine();
         }
     }
 }
+
